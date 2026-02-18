@@ -33,9 +33,9 @@ modules:
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
-  - tyoe: script
+  - type: script
     snippets:
-      - "systemctl status nix-daemon.service"
+      - "systemctl -v status nix-daemon.service"
       - "find /nix"
       - "rm -rfv /nix"
       - "mkdir -v /nix"
