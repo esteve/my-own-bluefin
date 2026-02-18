@@ -35,7 +35,7 @@ modules:
 
   - type: script
     snippets:
-      - "systemctl -v status nix-daemon.service"
+      - "systemctl status nix-daemon.service"
       - "find /nix"
       - "rm -rfv /nix"
       - "mkdir -v /nix"
