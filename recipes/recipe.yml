@@ -35,7 +35,7 @@ modules:
 
   - tyoe: script
     snippets:
-      - mv /nix /var/nix && mkdir /nix
+      - "mv /nix /var/nix && mkdir /nix"
 
   - type: default-flatpaks
     configurations:
