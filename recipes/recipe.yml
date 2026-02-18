@@ -35,7 +35,7 @@ modules:
 
   - tyoe: script
     snippets:
-      - "systemctl --verbose stop nix-daemon.service && rm -rfv /nix && mkdir -v /nix"
+      - "systemctl stop -v nix-daemon.service && rm -rfv /nix && mkdir -v /nix"
 
   - type: default-flatpaks
     configurations:
