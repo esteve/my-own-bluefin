@@ -39,6 +39,12 @@ modules:
       - "rm -rfv /nix"
       - "mkdir -v /nix"
 
+  - type: systemd
+    system:
+      enabled:
+        - nix.mount
+        - nix-daemon.service
+
   - type: default-flatpaks
     configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
